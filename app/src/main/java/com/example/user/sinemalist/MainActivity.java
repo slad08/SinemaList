@@ -19,7 +19,10 @@ public class MainActivity extends AppCompatActivity {
         arrayMovie.add("Терминатор");
         arrayMovie.add("Рембо");
 
-        ArrayAdapter<String> adapter =new ArrayAdapter<>(this,R.layout.movie_list_item,R.id.textView,arrayMovie);
+        ArrayAdapter<String> adapter =new ArrayAdapter<>(this,
+                R.layout.movie_list_item,
+                R.id.textView,
+                arrayMovie);
 
         ListView listMovies= (ListView) findViewById(R.id.listMovies);
         listMovies.setAdapter(adapter);
